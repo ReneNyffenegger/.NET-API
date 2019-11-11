@@ -3,12 +3,33 @@ using System.Windows.Forms;
 
 class tq84App : Form {
 
+//
+// This is the PropertyGrid that will show
+// the properties of an object.
+//
    private PropertyGrid propGrid;
-   private Button       btn;
+   
+//
+// This is the object whose properties will be
+// shown in the PropertyGrid:
+//
    private Obj          obj;
 
-   class Obj {
+//
+// This is the button that, when pressed, will
+// show a MessageBox that will display the
+// properties of the object. This is especially
+// interesting after the values of the object's
+// properties have been changed with the PropertyGrid.
+//
+   private Button       btn;   
 
+   class Obj {
+   //
+   // The class for the object.
+   // It has four fields of which three will
+   // be shown in the PropertyGrid (see comment below).
+   //
       private string one_  ;
       private string two_  ;
       private string three_;
@@ -24,6 +45,9 @@ class tq84App : Form {
       public string three { get { return three_;} set {three_ = value; } }
 
       public Obj(string one, string two, string three, string four) {
+      //
+      // Constructor
+      //
          one_   = one  ;
          two_   = two  ;
          three_ = three;
@@ -31,6 +55,12 @@ class tq84App : Form {
       }
 
       public override string ToString() {
+      //
+      // A ToString() method to show the values of
+      // the object's fields. This method is invoked
+      // when the button is pressed and the return
+      // value is displayed in the MessageBox.
+      //
          return "one = "   + one   +
               "\ntwo = "   + two   +
               "\nthree = " + three +
