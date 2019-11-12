@@ -40,10 +40,10 @@ class C {
     //
     // Using Serialize
     //
-       JSONData obj = (JSONData) jsonSerializer.Deserialize( JSONText, typeof(JSONData) );
+       JSONData data = (JSONData) jsonSerializer.Deserialize( JSONText, typeof(JSONData) );
 
-       Console.WriteLine(obj.num);
-       Console.WriteLine(obj.txt);
-       Console.WriteLine(obj.ary[2]);
+       Console.WriteLine(data.num);
+       Console.WriteLine(data.txt);
+       Console.WriteLine(data.ary[2]);
    }
 }
