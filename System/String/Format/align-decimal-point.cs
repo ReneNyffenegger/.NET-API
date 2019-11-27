@@ -3,7 +3,7 @@ using System;
 class Prg {
 
    public static void Main() {
-      var nums = new object[] { 42, 12.34567, null, 7.1F,  9876.54321 };
+      var nums = new object[] { 42, 12.34567, null, 7.1F,  9876.54321, -333.3333333, 17.17M };
 
       foreach (var num in nums) {
          Console.WriteLine(String.Format(
@@ -15,8 +15,10 @@ class Prg {
    }
 }
 //
-// System.Int32        :   42.000
-// System.Double       :   12.346
-// null                :
-// System.Single       :    7.100
-// System.Double       : 9876.543
+//  System.Int32        :   42.000
+//  System.Double       :   12.346
+//  null                :
+//  System.Single       :    7.100
+//  System.Double       : 9876.543
+//  System.Double       : -333.333
+//  System.Decimal      :   17.170
