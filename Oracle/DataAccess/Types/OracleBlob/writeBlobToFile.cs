@@ -24,9 +24,9 @@ class Prg {
 
          Console.WriteLine($"{filename}: {image.Length} bytes");
 
-	       Byte[] bytes =  new Byte[image.Length];
+         Byte[] bytes =  new Byte[image.Length];
 
-    		 int lenRead = image.Read(bytes,0, System.Convert.ToInt32(image.Length ));
+         int lenRead = image.Read(bytes,0, System.Convert.ToInt32(image.Length ));
          if (lenRead != image.Length) {
             Console.WriteLine($"! lenRead = {lenRead}");
          }
