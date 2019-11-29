@@ -1,6 +1,6 @@
 //   set ORACLE_HOME=c:\oracle\18c
 //   copy %oracle_home%\ODP.NET\bin\4\Oracle.DataAccess.dll .
-//   csc -debug -reference:Oracle.DataAccess.dll writeBlobToFile.cs
+//   csc -reference:Oracle.DataAccess.dll writeBlobToFile.cs
 
 using System;
 using System.Data;
