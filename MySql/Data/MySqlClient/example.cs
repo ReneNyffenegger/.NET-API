@@ -13,7 +13,7 @@ class Prg {
     //    Add old guids=true in order to prevent
     //        System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
     //
-       MySqlConnection mySql = new MySqlConnection("Database=tq84_db;Data Source=OMIS-NC-08;User Id=rene;Password=rene;old guids=true");
+       MySqlConnection mySql = new MySqlConnection("Database=tq84_db;Data Source=TQ84-PC;User Id=rene;Password=rene;old guids=true");
        mySql.Open();
 
     //
