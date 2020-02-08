@@ -15,4 +15,4 @@ $font      = new-object Drawing.Font "Courier New", 16, ( [Drawing.FontStyle]::B
 $brushFont = new-object Drawing.SolidBrush ([Drawing.Color]::FromArgb(255,  50,  90, 230));
 $canvas.DrawString("Hello world", $font, $brushFont, 22, 8)
 
-$bmp.Save("$(get-location)\img\Hello-world.bmp");
+$bmp.Save("$(get-location)\img\Hello-world.png");
