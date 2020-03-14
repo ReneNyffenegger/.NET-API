@@ -1,4 +1,5 @@
 $dict = new-object 'System.Collections.Generic.Dictionary[String, String]'
+
 $dict['Fruit'] = 'Orange'
 $dict['City' ] = 'Paris'
 $dict['Make' ] = 'BWM'
