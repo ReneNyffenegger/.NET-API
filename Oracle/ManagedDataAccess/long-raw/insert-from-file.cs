@@ -35,12 +35,6 @@ class Prg {
       stmt.Parameters.Add("id" , OracleDbType.Int32  ).Value = 42;
       stmt.Parameters.Add("bin", OracleDbType.LongRaw).Value = data;
 
-   // OracleParameter id  = stmt.Parameters.Add("id" , OracleDbType.Int32  );
-   // OracleParameter bin = stmt.Parameters.Add("bin", OracleDbType.LongRaw);
-
-   // id.Value  = 42;
-   // bin.Value = data;
-
       stmt.ExecuteNonQuery();
    }
 }
