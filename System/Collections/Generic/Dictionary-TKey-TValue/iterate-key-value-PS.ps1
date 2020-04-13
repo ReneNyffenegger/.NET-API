@@ -5,8 +5,8 @@ $dict['ninety-nine'] = 99
 $dict['minus one'  ] = -1
 
 
-foreach ($member in $dict.GetEnumerator()) {
-    "{0,-11}: {1}" -f $member.key, $member.value
+foreach ($item in $dict.GetEnumerator()) {
+    "{0,-11}: {1}" -f $item.key, $item.value
 }
 #
 # forty-two  : 42
