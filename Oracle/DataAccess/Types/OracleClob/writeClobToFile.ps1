@@ -2,7 +2,7 @@ add-type -path "$env:oracle_home\odp.net\bin\4\Oracle.DataAccess.dll"
 
 $enc = [System.Text.Encoding]::GetEncoding(1252)
 
-$conn = [Oracle.DataAccess.Client.OracleConnection]::new("User ID=rene/rene;data source=ora19")
+$conn = [Oracle.DataAccess.Client.OracleConnection]::new("User ID=rene;Password=rene;data source=ora19")
 $conn.Open()
 
 $sql  = [Oracle.DataAccess.Client.OracleCommand]::new("select filename, text from tab", $conn)
