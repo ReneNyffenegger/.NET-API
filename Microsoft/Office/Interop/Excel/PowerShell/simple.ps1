@@ -1,4 +1,10 @@
-add-type -path 'C:\Program Files (x86)\Microsoft Office\Office16\DCF\Microsoft.Office.Interop.Excel.dll'
+set-strictMode -version latest
+
+  $null = [Reflection.Assembly]::LoadWithPartialName(                      "Microsoft.Office.InterOp.Excel"   )
+# add-type -path      'C:\Program Files (x86)\Microsoft Office\Office16\DCF\Microsoft.Office.Interop.Excel.dll'
+# add-type -path 'C:\Program Files (x86)\Microsoft Office\root\Office16\DCF\Microsoft.Office.Interop.Excel.dll'
+
+
 $xls = new-object Microsoft.Office.Interop.Excel.ApplicationClass
 
 $xls.Visible = $true
