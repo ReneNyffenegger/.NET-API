@@ -1,0 +1,12 @@
+<rt>
+
+   <item id="foo">
+      <valOne>foo 1</valOne>
+      <valTwo>foo 2</valTwo>
+   </item>
+
+   <item id="baz">
+      <valOne>baz 1</valOne>
+   </item>
+
+</rt>
