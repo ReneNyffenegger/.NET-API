@@ -1,3 +1,5 @@
+set-strictMode -version latest
+
 function get-or-create-elem-with-id($doc, $id) {
 
    $elem = $doc.SelectSingleNode("/rt/item[@id='$id']")
@@ -15,13 +17,13 @@ function get-or-create-elem-with-id($doc, $id) {
 
 function create-val-if-not-exists($elem, $valName, $doc) {
 
-     if ($elem.SelectSingleNode($valName) -eq $null) {
+   if ($elem.SelectSingleNode($valName) -eq $null) {
 
-        $val = $doc.CreateElement($valName)
-        $val.InnerText = 'created'
+      $val = $doc.CreateElement($valName)
+      $val.InnerText = 'created'
 
-        $null = $elem.AppendChild($val)
-     }
+      $null = $elem.AppendChild($val)
+   }
 }
 
 
@@ -31,7 +33,6 @@ $doc.Load("$pwd/orig.xml")
 foreach ($id in 'foo', 'bar', 'baz') {
 
    $elem = get-or-create-elem-with-id $doc  $id
-
 
    create-val-if-not-exists $elem 'valOne' $doc
    create-val-if-not-exists $elem 'valTwo' $doc
