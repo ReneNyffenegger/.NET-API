@@ -1,7 +1,7 @@
 $ins_stmt = $con.CreateCommand()
 $ins_stmt.CommandText = 'insert into tq84_table(a, b) values (:a, :b)'
 $param_a  = $ins_stmt.Parameters.Add(':a' , [Oracle.DataAccess.Client.OracleDbType]::Decimal)
-$param_b  = $ins_stmt.Parameters.Add(':a' , [Oracle.DataAccess.Client.OracleDbType]::Varchar2)
+$param_b  = $ins_stmt.Parameters.Add(':b' , [Oracle.DataAccess.Client.OracleDbType]::Varchar2)
 
 $param_a.value = 42
 $param_b.value ='Hello world'
