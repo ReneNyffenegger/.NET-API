@@ -1,0 +1,2 @@
+$con.Close()
+$con.Dispose()
