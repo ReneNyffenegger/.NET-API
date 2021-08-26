@@ -3,7 +3,6 @@ rm   App.exe.config -errorAction ignore
 
 csc  -nologo App.cs
 
-
 & .\App
 
 mv tq84.config App.exe.config
