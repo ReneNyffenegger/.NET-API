@@ -1,3 +1,5 @@
+add-type -assemblyName System.Windows.Forms
+
 $res = [System.Windows.Forms.Messagebox]::Show(
     "Do you feel like it?",
     "Choose wisely"       ,
