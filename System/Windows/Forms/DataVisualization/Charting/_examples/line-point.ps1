@@ -11,7 +11,7 @@ $cos = new-object System.Windows.Forms.DataVisualization.Charting.Series
 for ($p = 0; $p -le 50; $p++) {
    $x = -[Math]::PI + $p * 2*[Math]::PI / 50
 
-   $null = $sin.Points.AddXY($x  , [Math]::Sin($x))
+   $null = $sin.Points.AddXY($x, [Math]::Sin($x))
    $null = $cos.Points.AddXY($x, [Math]::Cos($x))
 }
 
@@ -54,4 +54,4 @@ $AnchorAll = [System.Windows.Forms.AnchorStyles]::Bottom -bor [System.Windows.Fo
 $chart.Anchor = $AnchorAll
 
 $Form.Add_Shown({$Form.Activate()})
-[void] $Form.ShowDialog()
+$null = $Form.ShowDialog()
