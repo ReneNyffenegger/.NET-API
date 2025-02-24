@@ -1,6 +1,6 @@
 set-strictMode -version latest
 
-  $null = [Reflection.Assembly]::LoadWithPartialName(                      "Microsoft.Office.InterOp.Excel"   )
+  $null = [Reflection.Assembly]::LoadWithPartialName(                      "Microsoft.Office.Interop.Excel"   )
 # add-type -path      'C:\Program Files (x86)\Microsoft Office\Office16\DCF\Microsoft.Office.Interop.Excel.dll'
 # add-type -path 'C:\Program Files (x86)\Microsoft Office\root\Office16\DCF\Microsoft.Office.Interop.Excel.dll'
 
